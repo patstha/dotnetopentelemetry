@@ -1,9 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationInsightsResourceId>/subscriptions/d82a855d-d43e-48a8-85ad-985091d48d38/resourceGroups/Auto-N-CheckerResourceGroup22/providers/microsoft.insights/components/kustest-dotnetopentelemetry</ApplicationInsightsResourceId>
+    <UserSecretsId>18244fd6-c756-4d40-ac14-47a973b523cc</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
+  </ItemGroup>
 
 </Project>
