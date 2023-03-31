@@ -22,6 +22,7 @@ namespace dotnetopentelemetry.Pages
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            _logger.LogError("Hit the error page for {requestid}", RequestId);
         }
     }
 }

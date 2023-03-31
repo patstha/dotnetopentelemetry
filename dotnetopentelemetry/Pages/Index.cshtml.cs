@@ -14,7 +14,7 @@ namespace dotnetopentelemetry.Pages
 
         public void OnGet()
         {
-
+            _logger.LogInformation("Visitor arrived on index page");
         }
     }
 }
